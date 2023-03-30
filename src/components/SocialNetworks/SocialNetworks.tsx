@@ -1,51 +1,39 @@
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import * as iconFa from "react-icons/fa";
+import React, {useContext} from "react";
+import {AppContext} from "../../context/AppContext";
 
 import "./socialnetworks.sass";
 
-const socialNetworks = [
-  {
-    name: "whatsapp",
-    icon: <FaWhatsapp />,
-    url: "https://wa.me/5515998485252",
-  },
-  {
-    name: "instagram",
-    icon: <FaInstagram />,
-    url: "https://www.instagram.com/danieltoledo_02/",
-  },
-  {
-    name: "linkedin",
-    icon: <FaLinkedinIn />,
-    url: "https://www.linkedin.com/in/danielalmeidadetoledo/",
-  },
-  {
-    name: "github",
-    icon: <FaGithub />,
-    url: "https://github.com/DanielAlmeidaToledo",
-  },
-];
+const isIconName = (iconName: string): iconName is keyof typeof iconFa =>
+    Object.prototype.hasOwnProperty.call(iconFa, iconName);
 
 const SocialNetworks = () => {
-  return (
-    <section id="social-networks">
-      {socialNetworks.map((network) => (
-        <a
-          href={network.url}
-          className="social-btn"
-          id={network.name}
-          key={network.name}
-          target="_blank"
-        >
-          {network.icon}
-        </a>
-      ))}
-    </section>
-  );
-};
+    const appContext = useContext(AppContext);
+
+    return (
+        <section id="social-networks">
+            {appContext.data.user.socialNetworks.map((network) => {
+                if (!isIconName(network.icon)) {
+                    return null;
+                }
+                const FaIcon = iconFa[network.icon];
+                return (
+                    <a
+                        href={network.url}
+                        className="social-btn"
+                        id={network.name}
+                        key={network.name}
+                        target="_blank"
+                    >
+                        <FaIcon/>
+                    </a>
+                )
+            })}
+</section>
+)
+;
+}
+;
 
 export default SocialNetworks;
+
