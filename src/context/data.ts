@@ -67,25 +67,67 @@ const data: Data = {
         ],
         technologies: [
             {
+                id: "java",
+                name: "Java",
+                color: "#155EA3",
+                icon: "SiJava",
+                description: "JDK 11, Concurrent, Lambda, Spring Boot, Spring Cloud, Sprint Security.",
+            },
+            {
+                id: "aws",
+                name: "AWS",
+                icon: "SiAmazonaws",
+                color: "#E98629",
+                description: "EC2, S3, Lambda, EKS, ECR, IAM, VPC, Route 53.",
+            },
+            {
                 id: "react",
                 name: "React.JS",
                 color: "#61dafb",
-                icon: "SiJava",
-                description: "Components, Hooks, Reduce, Context, Router, Listas, API's.",
+                icon: "SiReact",
+                description: "Components, Hooks, Redux, Context, Router, API's.",
             },
             {
-                id: "angular",
-                name: "Angular",
+                id: "mysql",
+                name: "MySQL",
+                color: "#115479",
+                icon: "SiMysql",
+                description: "SQL, Table, Index, Stored Procedure, View",
+            },
+            {
+                id: "mongodb",
+                name: "MongoDB",
+                color: "#1F7D45",
+                icon: "SiMongodb",
+                description: "Collections, Index, Replica, Query, API's.",
+            },
+            {
+                id: "redis",
+                name: "Redis",
+                color: "#C92B24",
+                icon: "SiRedis",
+                description: "hash, set, Replica, Query, API's.",
+            },
+            {
+                id: "Nginx",
+                name: "Nginx",
+                icon: "SiNginx",
+                color: "#158534",
+                description: "openresty, ssl, load balancer, reverse_proxy.",
+            },
+            {
+                id: "vue",
+                name: "Vue",
+                icon: "SiVuedotjs",
+                color: "#3DA875",
+                description: "Components, Vuex, Transition, v-model.",
+            },
+            {
+                id: "python",
+                name: "Python",
                 icon: "SiPython",
-                color: "#C4002B",
-                description: "Components, Renderização, Interface, Diretivas, Listas.",
-            },
-            {
-                id: "next",
-                name: "Next.JS",
-                icon: "SiNextdotjs",
-                color: "#FFFFFF",
-                description: "Components, Nested Routes, API's.",
+                color: "#334495",
+                description: "Pandas, Lambda, Tuple",
             },
             {
                 id: "typescript",
@@ -99,42 +141,14 @@ const data: Data = {
                 name: "Node.JS",
                 icon: "SiNodedotjs",
                 color: "#44883e",
-                description: "Rotas, Express, API's.",
-            },
-            {
-                id: "js",
-                name: "JavaScript",
-                icon: "DiJsBadge",
-                color: "#f0db4f",
-                description: "DOM, Functions, Objects, API's, Local Storage, JSON.",
-            },
-            {
-                id: "jquery",
-                name: "jQuery",
-                icon: "SiJquery",
-                color: "#0769ad",
-                description: "Eventos, Ajax, JSON, Local Storage.",
+                description: "Express, API's.",
             },
             {
                 id: "tailwind",
                 name: "Tailwind CSS",
                 icon: "SiTailwindcss",
                 color: "#38BDF8",
-                description: "Animações, Responsividade, Media Queries.",
-            },
-            {
-                id: "sass",
-                name: "Sass",
-                icon: "DiSass",
-                color: "#CD6799",
-                description: "Variables, Mixins, Includes.",
-            },
-            {
-                id: "bootstrap",
-                name: "Bootstrap",
-                icon: "SiBootstrap",
-                color: "#6E2CF1",
-                description: "Grids, Cards, Alerts, Tables",
+                description: "Animation, Responsive, Media Queries.",
             },
         ],
         introduction: [
@@ -178,8 +192,36 @@ const data: Data = {
                 }
             },
         ],
-        experiences: [],
-        projects: []
+        experiences: [{
+            name: "BA Techworks",
+            date: "2021 Dec | Now",
+            role: "DevOps & Scrum Master",
+        }, {
+            name: "KPMG",
+            date: "2018 Sep | 2021 Nov",
+            role: "Senior Engineer",
+        }, {
+            name: "Liandisys",
+            date: "2017 Jun | 2018 Sep",
+            role: "Junior Engineer",
+        }],
+        projects: [{
+            name: "Location Service",
+            date: "2021 Dec | Now",
+            role: "DevOps & Scrum Master",
+        }, {
+            name: "Low-code platform",
+            date: "2021 Mar | 2021 Nov",
+            role: "Fullstack Engineer",
+        }, {
+            name: "KCC",
+            date: "2020 Oct | 2021 Mar",
+            role: "Fullstack Engineer",
+        }, {
+            name: "Datalake",
+            date: "2019 Mar | 2020 Oct",
+            role: "Fullstack Engineer & Ops",
+        }]
     }
 };
 

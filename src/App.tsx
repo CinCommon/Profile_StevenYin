@@ -11,7 +11,7 @@ function App() {
     return (
         <I18nextProvider i18n={i18n}>
             <AppContextProvider>
-                <div id="portfolio" onClick={() => i18n.changeLanguage(i18n.language === "zh_CN" ? "en_GB" : "zh_CN")}>
+                <div id="portfolio">
                     <HomeContainer/>
                     <Sidebar/>
                     <MainContent/>

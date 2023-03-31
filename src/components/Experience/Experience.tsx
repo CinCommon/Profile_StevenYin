@@ -11,11 +11,13 @@ const Experience = () => {
   return (
     <div className="experience-container">
       <h2>{t('title.experience')}</h2>
-
       <Tabs.Root className="TabsRoot" defaultValue="tab1">
         <Tabs.List className="TabsList" aria-label="Manage your account">
           <Tabs.Trigger className="TabsTrigger" value="tab1">
-            Profissionais
+            {t('title.companies')}
+          </Tabs.Trigger>
+          <Tabs.Trigger className="TabsTrigger" value="tab2">
+            {t('title.projects')}
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className="TabsContent" value="tab1">
@@ -36,13 +38,14 @@ const Experience = () => {
         <Tabs.Content className="TabsContent" value="tab2">
           <div className="experiences-list">
             {appContext.data.user.projects.map((experience) => {
-              const { role, name, date } = experience;
+              const { role, name, date, description } = experience;
               return (
                 <div className="experience-item" key={name}>
                   <div className="circle"></div>
-                  <h3>{role}</h3>
-                  <span>{name}</span>
+                  <h3>{name}</h3>
+                  <span>{role}</span>
                   <p>{date}</p>
+                  <p>{description}</p>
                 </div>
               );
             })}

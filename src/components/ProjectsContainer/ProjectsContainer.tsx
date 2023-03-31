@@ -18,11 +18,11 @@ const ProjectsContainer = () => {
       <Carousel />
 
       <a
-        href="https://github.com/DanielAlmeidaToledo"
+        href="https://github.com/CinCommon"
         className="btn btnGithub"
         target={"_blank"}
       >
-        Acessar Github
+        Access Github
       </a>
     </section>
   );
