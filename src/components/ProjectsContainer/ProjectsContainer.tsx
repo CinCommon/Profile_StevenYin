@@ -1,11 +1,13 @@
 import Carousel from "../Carousel/Carousel";
 
 import "./projectscontainer.sass";
+import {useTranslation} from "react-i18next";
 
 const ProjectsContainer = () => {
+  const { t } = useTranslation();
   return (
     <section className="projects-container">
-      <h2>Projetos</h2>
+      <h2>{t("title.projects")}</h2>
       <p>
         Constantemente gosto de criar novos projetos e até mesmo aprimorar
         projetos antigos, buscando sempre uma otimização de códigos e uma

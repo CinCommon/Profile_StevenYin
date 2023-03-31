@@ -6,12 +6,14 @@ import Avatar from "../../assets/Avatar.jpg";
 import CV from "../../assets/CVDanielToledo.pdf";
 
 import "./sidebar.sass";
+import {useTranslation} from "react-i18next";
 
 const Sidebar = () => {
+    const {t} = useTranslation();
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Image Steven Yin"></img>
-      <p className="title">Fullstack Engineer</p>
+      <p className="title">{t("title.role")}</p>
       <SocialNetWorks />
       <InformationContainer />
       <a href={CV} download={CV} className="btn">

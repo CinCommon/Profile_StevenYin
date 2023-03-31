@@ -1,5 +1,11 @@
 {
   "landing": {
     "job-title": "Fullstack Engineer"
+  },
+  "title": {
+    "projects": "Projects",
+    "role": "Fullstack Engineer",
+    "technologies": "Technologies",
+    "about": "About"
   }
 }
