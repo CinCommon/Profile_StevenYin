@@ -2,6 +2,7 @@ export interface Data {
     user: {
         name: string,
         email: string,
+        resume: string,
         socialNetworks: Icon[],
         technologies: Icon[],
         introduction: string[],
@@ -37,8 +38,9 @@ export interface Experience {
 
 const data: Data = {
     user: {
-        name: "Steven Yin",
+        name: "Steven Zifan Yin",
         email: "yinzifancn@gmail.com",
+        resume: "https://stevenyinbuckets.s3.ap-southeast-2.amazonaws.com/SE-CV-ZifanYin.pdf",
         socialNetworks: [
             {
                 id: "facebook",
@@ -50,7 +52,7 @@ const data: Data = {
                 id: "twitter",
                 name: "twitter",
                 icon: "FaTwitter",
-                url: "https://twitter.com/CommonCin",
+                url: "https://twitter.com/StevenYinKop/",
             },
             {
                 id: "linkedin",
@@ -62,7 +64,7 @@ const data: Data = {
                 id: "github",
                 name: "github",
                 icon: "FaGithub",
-                url: "https://github.com/CinCommon",
+                url: "https://github.com/StevenYinKop/",
             },
         ],
         technologies: [
@@ -152,11 +154,11 @@ const data: Data = {
             },
         ],
         introduction: [
-            "Hello, I'm Steven, and I am a DevOps and Scrum Master with expertise in a range of technologies, including Java, React, Vue, Python, Kotlin, Linux, AWS, and Terraform. With a passion for continuous improvement and a commitment to best practices, I help organizations achieve their development goals through effective collaboration and agile methodologies.",
-            "In addition to my technical skills, I am also a lifelong learner who enjoys reading, working out, getting tattoos, driving, and sampling various types of coffee. I believe that a healthy body and mind are crucial for success in any field, and I enjoy exploring new experiences that broaden my horizons.",
-            "I'm also a language and culture enthusiast and enjoy learning new languages as well as experiencing different cultures, I can speak Chinese, English and Japanese, and I can read German, and Esperanto, enabling me to work effectively with diverse teams and stakeholders around the world. I believe that effective communication is key to success in any project, and I take pride in my ability to bridge cultural and linguistic barriers to create a positive and productive work environment.",
-            "When I'm not working, I enjoy cheering on my favorite football team, Liverpool. I find that my passion for sports translates well to my work in technology, as both require discipline, focus, and teamwork to succeed.",
-            "Let's connect and explore how we can work together to achieve success."
+            "Hello, I'm Steven.",
+            "Accomplished Software Engineer with 6+ years’ experience specializing in Java, Node.js, React.js, Vue.js, AWS, Python, and DevOps. Proven history of delivering complex solutions from design through implementation leveraging strong communication and analytical abilities.",
+            "Results-driven professional with a customer-centric mindset, excelling in complex software projects. Adaptable in dynamic environments, skilled in Scaled Agile Framework (SAFe). Strong communication, attention to detail, and creative problem-solving.",
+            "Proactive team player in high-performing engineering teams, contributing analytical prowess and creativity. Actively pursues continuous improvement and learning new technologies. Recognized for customer-focused solutions and engagement throughout the software development lifecycle.",
+            "Motivated, results-oriented individual committed to excellence in team settings. Thrives in fast-paced, Agile environments, ensuring successful project outcomes."
         ],
         summary: [
             {label: "Freelancers", value: 3},
@@ -166,7 +168,7 @@ const data: Data = {
         information: [
             {
                 label: "Telephone",
-                value: "(86) 15751837892",
+                value: "(61) 0413 271 608",
                 icon: {
                     id: "phone-icon",
                     icon: "AiFillPhone",
@@ -184,7 +186,7 @@ const data: Data = {
             },
             {
                 label: "Location",
-                value: "Nanjing, China",
+                value: "Melbourne, Australia",
                 icon: {
                     id: "pin-icon",
                     icon: "AiFillEnvironment",
@@ -194,7 +196,7 @@ const data: Data = {
         ],
         experiences: [{
             name: "BA Techworks",
-            date: "2021 Dec | Now",
+            date: "2021 Dec | 2023 Oct",
             role: "DevOps & Scrum Master",
         }, {
             name: "KPMG",
@@ -207,20 +209,20 @@ const data: Data = {
         }],
         projects: [{
             name: "Location Service",
-            date: "2021 Dec | Now",
+            date: "2021 Dec | 2023 Oct",
             role: "DevOps & Scrum Master",
         }, {
-            name: "Low-code platform",
+            name: "KPMG Smart Application Factory",
             date: "2021 Mar | 2021 Nov",
             role: "Fullstack Engineer",
         }, {
-            name: "KCC",
+            name: "KPMG Collaboration Centre",
             date: "2020 Oct | 2021 Mar",
             role: "Fullstack Engineer",
         }, {
-            name: "Datalake",
+            name: "KPMG Datalake",
             date: "2019 Mar | 2020 Oct",
-            role: "Fullstack Engineer & Ops",
+            role: "Fullstack Engineer & DevOps",
         }]
     }
 };

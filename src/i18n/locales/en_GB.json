@@ -1,12 +1,13 @@
 {
   "landing": {
-    "job-title": "Fullstack Engineer"
+    "job-title": "Senior Fullstack Engineer"
   },
   "title": {
     "companies": "Companies",
     "projects": "Projects",
-    "role": "Fullstack Engineer",
+    "role": "Senior Fullstack Engineer",
     "technologies": "Technologies",
+    "experience": "Experience",
     "about": "About"
   }
 }
