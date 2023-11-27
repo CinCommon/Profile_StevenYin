@@ -2,7 +2,7 @@ import "./carousel.sass";
 
 export const baseUrl = "../assets/projects";
 
-const projects = [];
+const projects: any[] = [];
 // [
 //   {
 //     title: "",
