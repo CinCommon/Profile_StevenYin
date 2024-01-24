@@ -40,7 +40,7 @@ const data: Data = {
     user: {
         name: "Steven Zifan Yin",
         email: "yinzifancn@gmail.com",
-        resume: "https://stevenyinbuckets.s3.ap-southeast-2.amazonaws.com/SE-CV-ZifanYin.pdf",
+        resume: "https://stevenyinbuckets.s3.ap-southeast-2.amazonaws.com/SE-CV-StevenYin.pdf",
         socialNetworks: [
             {
                 id: "facebook",
